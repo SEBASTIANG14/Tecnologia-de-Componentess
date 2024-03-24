@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff; /* Agregamos un color de fondo */
+  padding: 20px; /* Agregamos un espacio de relleno */
+}
+
+.listaProductos {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  border: 1px solid #dddddd; /* Cambiamos el color del borde */
+  border-radius: 10px;
+  width: 300px;
+  margin: 10px;
+  padding: 20px; /* Agregamos un espacio de relleno */
+  text-align: center;
+  background-color: #f9f9f9; /* Agregamos un color de fondo */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buscador-container {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px; /* Ajustamos el espacio de relleno */
+  border-radius: 5px;
 }
+
+.buscador-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px; /* Ajustamos el espacio de relleno */
+  border-radius: 5px;
+}
+
+.buscador-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px; /* Ajustamos el espacio de relleno */
+  border-radius: 5px;
+  margin-left: 10px; /* Ajustamos el margen izquierdo */
+  cursor: pointer;
+}
+
+.buscador-button:hover {
+  background-color: #0056b3;
+}
+
